@@ -11,10 +11,9 @@
 
     </div>
   </div>
-
   <div class="card-list">
-    <div class="row no-gutters">
-      <div class="col-" *ngFor="let card of listPlayerCards">
+    <div class="card-list-container">
+      <div class="card-container" *ngFor="let card of listPlayerCards">
         <app-card [card]="card"></app-card>
       </div>
     </div>
