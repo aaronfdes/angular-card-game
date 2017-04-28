@@ -15,11 +15,13 @@
     background-color: yellow;  
 }
 .card-list-container {
-    display: flex;     
+    display: flex;    
+    justify-content: center;   
 }
 .card-container {
     flex: 1 0 0;
     overflow-x: hidden;
+    background-color: red;
 }
 .card-container:last-child {
     flex: 0 0 auto;

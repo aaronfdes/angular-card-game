@@ -13,7 +13,7 @@
   </div>
   <div class="card-list">
     <div class="card-list-container">
-      <div class="card-container" *ngFor="let card of listPlayerCards">
+      <div class="card-container" *ngFor="let card of listPlayerCards" (click)="clickedCard(card);">
         <app-card [card]="card"></app-card>
       </div>
     </div>

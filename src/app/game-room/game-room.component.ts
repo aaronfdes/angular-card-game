@@ -18,4 +18,9 @@ export class GameRoomComponent implements OnInit {
     this.listPlayerCards = this._gameRoomService.getPlayerCards();
   }
 
+  clickedCard(card: Card) {
+    this._gameRoomService.clickedCard(card);
+    this.listPlayerCards.splice(this.listPlayerCards.indexOf(card), 1);
+  }
+
 }

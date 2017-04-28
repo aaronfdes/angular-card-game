@@ -24,8 +24,11 @@ export class GameRoomService {
     playerCards.push(new Card("Q", "C"));
     playerCards.push(new Card("K", "H"));
     playerCards.push(new Card("A", "D"));
+    return playerCards.sort((x, y) => x.compare(y));
+  }
 
-    return playerCards.sort((x,y)=> x.compare(y));
+  public clickedCard(card: Card) {
+    console.log("User clicked  :" + card.getCardDetails());
   }
 
 }
