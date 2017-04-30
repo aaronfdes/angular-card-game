@@ -17,6 +17,9 @@ export class CardComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    if(this.card == null){
+      this.card = new Card("undefined","undefined");
+    }
   }
 
   onCardClick(){

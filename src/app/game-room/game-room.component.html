@@ -1,14 +1,42 @@
 <div class="gameroom">
 
-  <div class="playing-area">
-    
+  <div>
+    <!-- Played Cards Row -->
+    <div class="row no-gutters">
+      <div class="col col-sm-12 col-lg-12">
+        <div class="row no-gutters justify-content-center">
+          <div class="col col-sm-4 col-lg-4">
+            <div class="badge badge-pill badge-primary">North Player</div>
+            <app-card [card]="northPlayerCard"></app-card>
+          </div>
+        </div>
+        <div class="row no-gutters align-items-center">
+          <div class="col col-sm-4 col-lg-4">
+            <div class="badge badge-pill badge-primary">West Player</div>
+            <app-card [card]="westPlayerCard"></app-card>
+          </div>
+          <div class="col col-sm-4 col-lg-4">
+            <div class="badge badge-pill badge-info">South Players Turn</div>
+          </div>
+          <div class="col col-sm-4 col-lg-4">
+            <app-card [card]="eastPlayerCard"></app-card>
+            <div class="badge badge-pill badge-primary">East Player</div>
+          </div>
+        </div>
+        <div class="row no-gutters justify-content-center">
+          <div class="col col-sm-4 col-lg-4">
+            <div class="badge badge-pill badge-primary">South Player</div>
+            <app-card [card]="southPlayerCard"></app-card>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <div class="card-list">
-    <div class="card-list-container">
-      <div class="card-container" *ngFor="let card of listPlayerCards" >
-        <app-card [card]="card" (clickedCardEmitter)="clickedCard($event)"></app-card>
-      </div>
+
+  <div class="card-list-container">
+    <div class="card-container" *ngFor="let card of listPlayerCards">
+      <app-card [card]="card" (clickedCardEmitter)="clickedCard($event)"></app-card>
     </div>
   </div>
 

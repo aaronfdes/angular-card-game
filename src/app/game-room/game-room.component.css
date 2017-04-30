@@ -1,18 +1,5 @@
 .gameroom {
-    height: 100vh;
     background-color: darkgreen;
-}
-.playing-area{
-    height: 79vh;
-    background-color:aqua;
-}
-.header{
-    height: 5vh;
-    background-color:darkblue;
-}
-.card-list{ 
-    height: 21vh;
-    background-color: yellow;  
 }
 .card-list-container {
     display: flex;    

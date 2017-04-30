@@ -11,6 +11,10 @@ import { Card } from '../card/card';
 export class GameRoomComponent implements OnInit {
 
   private listPlayerCards: Array<Card>;
+  private southPlayerCard:Card;
+  private northPlayerCard:Card;
+  private eastPlayerCard:Card;
+  private westPlayerCard:Card;
 
   constructor(private _gameRoomService: GameRoomService) { }
 
@@ -20,6 +24,7 @@ export class GameRoomComponent implements OnInit {
 
   clickedCard(card: Card) {
     this._gameRoomService.clickedCard(card);
+    this.southPlayerCard = card;
     this.listPlayerCards.splice(this.listPlayerCards.indexOf(card), 1);
   }
 
