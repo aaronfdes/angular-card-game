@@ -1,6 +1,6 @@
 # Angular Card Game Layout
 
-##Technologies Used
+## Technologies Used
 * Angular 4.0.0
 * Bootstrap v4.0.0-alpha.6
 
