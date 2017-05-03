@@ -3,6 +3,7 @@
 ## Technologies Used
 * Angular 4.0.0
 * Bootstrap v4.0.0-alpha.6
+* Card images [https://code.google.com/archive/p/vector-playing-cards/]
 
 ## Development server
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.1.
